@@ -1,6 +1,6 @@
 [package]
 authors = ["Andreas Holmström <holmstrom.andreas95@gmail.com>"]
-edition = "2024"
+edition = "2021"
 readme = "README.md"
 name = "app"
 version = "0.1.0"
@@ -10,8 +10,8 @@ version = "0.1.0"
 # members = ["nrf52840-prx", "nrf52833-ptx"]
 
 [dependencies]
-heapless = "0.7"
-itoa = "1.0.10"
+# heapless = "0.7"
+# itoa = "1.0.10"
 cortex-m = { version = "0.7.4", features = [
     "inline-asm",
     "critical-section-single-core",
@@ -32,16 +32,12 @@ panic-halt = { version = "0.2.0" }
 rtt-target = { version = "0.5.0" }
 
 # Monotonic timers
-systick-monotonic = "1.0.0"
-dwt-systick-monotonic = "1.0.0"
-nb = "1.0.0"
-usb-device = "0.2.9"
-usbd-serial = "0.1.1"
-usbd-hid = "0.6.1"
-
-#ssd1306 = "0.8.4"
-#display-interface-spi = "0.5.0"
-#embedded-graphics = "0.8.1"
+# systick-monotonic = "1.0.0"
+# dwt-systick-monotonic = "1.0.0"
+# nb = "1.0.0"
+# usb-device = "0.2.9"
+# usbd-serial = "0.1.1"
+# usbd-hid = "0.6.1"
 
 # HAL
 # Maybe separate these in the future. Works for now
@@ -50,11 +46,6 @@ usbd-hid = "0.6.1"
 [dependencies.stm32l0]
 version = "0.15.1"
 features = ["stm32l0x3"]
-
-# LoRa gateway board 
-[dependencies.stm32f7xx-hal]
-version = "0.8.0"
-features = ["stm32f746", "rt"]
 
 
 [profile.dev]
