@@ -1,0 +1,4 @@
+/home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c:36:27:LoRaMacSerializerJoinRequest	8	static
+/home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c:72:27:LoRaMacSerializerReJoinType1	8	static
+/home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c:109:27:LoRaMacSerializerReJoinType0or2	8	static
+/home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c:146:27:LoRaMacSerializerData	16	static

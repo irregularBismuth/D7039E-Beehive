@@ -1,0 +1,8 @@
+/home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470A20.c:63:9:RegionCN470A20GetBeaconChannelOffset	0	static
+/home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470A20.c:68:9:RegionCN470A20LinkAdrChMaskUpdate	12	static
+/home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470A20.c:114:6:RegionCN470A20VerifyRfFreq	8	static
+/home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470A20.c:126:6:RegionCN470A20InitializeChannels	8	static
+/home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470A20.c:143:6:RegionCN470A20InitializeChannelsMask	0	static
+/home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470A20.c:163:10:RegionCN470A20GetRx1Frequency	0	static
+/home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470A20.c:58:10:RegionCN470A20GetDownlinkFrequency	8	static
+/home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470A20.c:178:10:RegionCN470A20GetRx2Frequency	48	static

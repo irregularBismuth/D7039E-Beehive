@@ -1,0 +1,4 @@
+/home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionBaseUS.c:48:24:FindAvailable125kHzChannels	5
+/home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionBaseUS.c:74:17:RegionBaseUSComputeNext125kHzJoinChannel	11
+/home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionBaseUS.c:135:6:RegionBaseUSVerifyFrequencyGroup	4
+/home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionBaseUS.c:146:10:RegionBaseUSCalcDownlinkFrequency	1
