@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete resource &apos;nucleo-wl55wjc17-sensor-testing&apos;" deleteContents="false" description="Delete resource &apos;nucleo-wl55wjc17-sensor-testing&apos;" element1="/nucleo-wl55wjc17-sensor-testing" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1728998561603"/>
-</session>

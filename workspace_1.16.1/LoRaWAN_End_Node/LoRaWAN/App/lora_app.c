@@ -68,20 +68,21 @@ typedef enum TxEventType_e
 
 typedef struct {
 	uint8_t type;
-	int data;
+	uint8_t id;
+	int8_t data;
 } Message_t;
 
 typedef struct {
-	int humidity;
-	int temperature;
+	uint8_t humidity;
+	int8_t temperature;
 } HumTempTuple_t;
 
 enum DeviceType_e
 {
-	LoadCell = 0,
-	Temperature = 1,
-	Humidity = 2,
-	Microphone = 3
+	LoadCell = 1,
+	Temperature = 2,
+	Humidity = 3,
+	Microphone = 4
 };
 
 uint8_t msg_buffer[sizeof(Message_t)];
@@ -502,8 +503,10 @@ int temp_conversion(uint8_t temp_high, uint8_t temp_low) {
 void read_temp_humid(HumTempTuple_t *t) {
 	HAL_StatusTypeDef ret;
 	uint8_t i2c_buf[30];
-
+	HAL_I2C_Init(&hi2c2);
 	ret = HAL_I2C_Master_Receive(&hi2c2, CHIPCAP2, i2c_buf, 4, 100);
+	HAL_I2C_DeInit(&hi2c2);
+
 	// BUG: Interrupt driven seems to generate incorrect readings.
 	// Don't know why this is the case. Using blocking read for now.
 	//ret = HAL_I2C_Master_Receive_IT(&hi2c2, CHIPCAP2, i2c_buf, 4);
@@ -660,27 +663,27 @@ static void SendTxData(void)
 //    AppData.Buffer[i++] = (uint8_t)(humidity & 0xFF);
     HumTempTuple_t t;
     read_temp_humid(&t);
+    Message_t hum = {
+    		.type = Humidity,
+			.id = 1,
+			.data = t.humidity,
+    };
+
+    Message_t temp = {
+    		.type = Temperature,
+			.id = 1,
+			.data = t.temperature,
+    };
+
+
     APP_LOG(TS_ON, VLEVEL_M, "Humidity: %d\r\n", t.humidity);
     APP_LOG(TS_ON, VLEVEL_M, "Temperature: %d\r\n", t.temperature);
 
-//	Message_t hum_m = {
-//			.type = Humidity,
-//			.data = t.humidity,
-//	};
-//	Message_t temp_m = {
-//			.type = Temperature,
-//			.data = t.temperature,
-//	};
-//
-//	AppData.Buffer[i++] = (uint8_t)(temp_m.data);
-//    AppData.Buffer[i++] = (uint8_t)(97);
-//    AppData.Buffer[i++] = (uint8_t)(97);
-//    AppData.Buffer[i++] = (uint8_t)(97);
-//    AppData.Buffer[i++] = (uint8_t)(97);
-//	memcpy(AppData.Buffer, &hum_m, sizeof(Message_t));
-//	i += sizeof(Message_t);
-//	memcpy(AppData.Buffer + i, &temp_m, sizeof(Message_t));
-//	i += sizeof(Message_t);
+
+	memcpy(AppData.Buffer, &hum, sizeof(Message_t));
+	i += sizeof(Message_t);
+	memcpy(AppData.Buffer + i, &temp, sizeof(Message_t));
+	i += sizeof(Message_t);
 //	AppData.Buffer[i++] = '\r';
 
 
