@@ -1,0 +1,85 @@
+2024-10-19 10:47:24,269 [INFO] WebApp:189 - Connection lost
+2024-10-19 10:47:31,257 [INFO] WebApp:186 - Connection restablished
+2024-10-19 10:49:35,070 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 363051808 Bytes (984612864)
+2024-10-19 10:49:36,122 [ERROR] IocParser:95 - Exception caught: Cannot invoke "java.lang.CharSequence.length()" because "this.text" is null
+2024-10-19 10:49:36,679 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 391358792 Bytes (984612864)
+2024-10-19 10:49:38,472 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 450674568 Bytes (984612864)
+2024-10-19 10:49:38,596 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-10-19 10:49:38,596 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-10-19 10:49:38,596 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: I2C
+2024-10-19 10:49:38,596 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2024-10-19 10:49:38,596 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYSM0P
+2024-10-19 10:49:38,596 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC2
+2024-10-19 10:49:38,596 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-10-19 10:49:38,597 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NUCLEO-WL55JC1
+2024-10-19 10:49:38,597 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC1
+2024-10-19 10:49:38,597 [INFO] CodeGenerator:807 - code generatio: config db path: /home/ante/st/stm32cubeide_1.16.1/plugins/com.st.stm32cube.common.mx_6.12.1.202409122256//db/
+2024-10-19 10:49:38,601 [ERROR] IocParser:95 - Exception caught: Cannot invoke "java.lang.CharSequence.length()" because "this.text" is null
+2024-10-19 10:49:38,618 [INFO] CodeGenerator:1531 - *******************Project context M4 selected
+2024-10-19 10:49:38,679 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/MXTmpFiles/license.tmp_save
+2024-10-19 10:49:38,789 [INFO] CodeEngine:279 - Generated code: /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/MXTmpFiles/license.tmp
+2024-10-19 10:49:38,810 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM4/MXTmpFiles/gpio.tmp_save
+2024-10-19 10:49:38,875 [INFO] CodeEngine:279 - Generated code: /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM4/MXTmpFiles/gpio.tmp
+2024-10-19 10:49:38,918 [WARN] IPConfigManager:98 - WARNING: Missing Config File for NVIC1 ip!!
+2024-10-19 10:49:38,997 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM4/Core/Inc/stm32wlxx_nucleo_conf.h_save
+2024-10-19 10:49:39,061 [INFO] CodeEngine:279 - Generated code: /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM4/Core/Inc/stm32wlxx_nucleo_conf.h
+2024-10-19 10:49:39,062 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM4/MXTmpFiles/bsp_inc.tmp_save
+2024-10-19 10:49:39,117 [INFO] CodeEngine:279 - Generated code: /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM4/MXTmpFiles/bsp_inc.tmp
+2024-10-19 10:49:39,118 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM4/MXTmpFiles/bsp_common_vars.tmp_save
+2024-10-19 10:49:39,174 [INFO] CodeEngine:279 - Generated code: /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM4/MXTmpFiles/bsp_common_vars.tmp
+2024-10-19 10:49:39,175 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM4/MXTmpFiles/bsp_common_init.tmp_save
+2024-10-19 10:49:39,227 [INFO] CodeEngine:279 - Generated code: /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM4/MXTmpFiles/bsp_common_init.tmp
+2024-10-19 10:49:39,228 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM4/MXTmpFiles/bsp_common_demo_before_while.tmp_save
+2024-10-19 10:49:39,280 [INFO] CodeEngine:279 - Generated code: /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM4/MXTmpFiles/bsp_common_demo_before_while.tmp
+2024-10-19 10:49:39,281 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM4/MXTmpFiles/bsp_common_demo_inside_while.tmp_save
+2024-10-19 10:49:39,334 [INFO] CodeEngine:279 - Generated code: /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM4/MXTmpFiles/bsp_common_demo_inside_while.tmp
+2024-10-19 10:49:39,336 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM4/MXTmpFiles/bsp_common_demo_fct.tmp_save
+2024-10-19 10:49:39,387 [INFO] CodeEngine:279 - Generated code: /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM4/MXTmpFiles/bsp_common_demo_fct.tmp
+2024-10-19 10:49:39,393 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM4/Core/Src/stm32wlxx_it.c_save
+2024-10-19 10:49:39,547 [INFO] CodeEngine:279 - Generated code: /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM4/Core/Src/stm32wlxx_it.c
+2024-10-19 10:49:39,548 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM4/Core/Inc/stm32wlxx_it.h_save
+2024-10-19 10:49:39,603 [INFO] CodeEngine:279 - Generated code: /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM4/Core/Inc/stm32wlxx_it.h
+2024-10-19 10:49:39,636 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM4/Core/Src/stm32wlxx_hal_msp.c_save
+2024-10-19 10:49:39,762 [INFO] CodeEngine:279 - Generated code: /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM4/Core/Src/stm32wlxx_hal_msp.c
+2024-10-19 10:49:39,763 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM4/MXTmpFiles/system.tmp_save
+2024-10-19 10:49:39,811 [INFO] CodeEngine:279 - Generated code: /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM4/MXTmpFiles/system.tmp
+2024-10-19 10:49:39,813 [INFO] CodeEngine:311 - oldGeneratedFile, /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM4/Core/Inc/stm32wlxx_hal_conf.h_save
+2024-10-19 10:49:39,921 [INFO] CodeEngine:335 - Generated code: /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM4/Core/Inc/stm32wlxx_hal_conf.h
+2024-10-19 10:49:39,926 [WARN] IPConfigManager:3554 - IP not found : NVIC
+2024-10-19 10:49:39,927 [WARN] CodeGenerator:4002 - IP not found : null
+2024-10-19 10:49:39,929 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM4/Core/Inc/main.h_save
+2024-10-19 10:49:39,993 [INFO] CodeEngine:279 - Generated code: /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM4/Core/Inc/main.h
+2024-10-19 10:49:39,995 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM4/Core/Src/main.c_save
+2024-10-19 10:49:40,083 [INFO] CodeEngine:279 - Generated code: /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM4/Core/Src/main.c
+2024-10-19 10:49:40,134 [INFO] CodeGenerator:1531 - *******************Project context M0P selected
+2024-10-19 10:49:40,183 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/MXTmpFiles/license.tmp_save
+2024-10-19 10:49:40,249 [INFO] CodeEngine:279 - Generated code: /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/MXTmpFiles/license.tmp
+2024-10-19 10:49:40,264 [WARN] IPConfigManager:98 - WARNING: Missing Config File for NVIC2 ip!!
+2024-10-19 10:49:40,282 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM0PLUS/Core/Inc/stm32wlxx_nucleo_conf.h_save
+2024-10-19 10:49:40,362 [INFO] CodeEngine:279 - Generated code: /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM0PLUS/Core/Inc/stm32wlxx_nucleo_conf.h
+2024-10-19 10:49:40,363 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM0PLUS/MXTmpFiles/bsp_inc.tmp_save
+2024-10-19 10:49:40,419 [INFO] CodeEngine:279 - Generated code: /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM0PLUS/MXTmpFiles/bsp_inc.tmp
+2024-10-19 10:49:40,420 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM0PLUS/MXTmpFiles/bsp_common_vars.tmp_save
+2024-10-19 10:49:40,465 [INFO] CodeEngine:279 - Generated code: /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM0PLUS/MXTmpFiles/bsp_common_vars.tmp
+2024-10-19 10:49:40,468 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM0PLUS/Core/Src/stm32wlxx_it.c_save
+2024-10-19 10:49:40,523 [INFO] CodeEngine:279 - Generated code: /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM0PLUS/Core/Src/stm32wlxx_it.c
+2024-10-19 10:49:40,524 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM0PLUS/Core/Inc/stm32wlxx_it.h_save
+2024-10-19 10:49:40,570 [INFO] CodeEngine:279 - Generated code: /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM0PLUS/Core/Inc/stm32wlxx_it.h
+2024-10-19 10:49:40,576 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM0PLUS/Core/Src/stm32wlxx_hal_msp.c_save
+2024-10-19 10:49:40,643 [INFO] CodeEngine:279 - Generated code: /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM0PLUS/Core/Src/stm32wlxx_hal_msp.c
+2024-10-19 10:49:40,644 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM0PLUS/MXTmpFiles/system.tmp_save
+2024-10-19 10:49:40,689 [INFO] CodeEngine:279 - Generated code: /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM0PLUS/MXTmpFiles/system.tmp
+2024-10-19 10:49:40,691 [INFO] CodeEngine:311 - oldGeneratedFile, /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM0PLUS/Core/Inc/stm32wlxx_hal_conf.h_save
+2024-10-19 10:49:40,740 [INFO] CodeEngine:335 - Generated code: /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM0PLUS/Core/Inc/stm32wlxx_hal_conf.h
+2024-10-19 10:49:40,744 [WARN] IPConfigManager:3554 - IP not found : NVIC
+2024-10-19 10:49:40,745 [WARN] CodeGenerator:4002 - IP not found : null
+2024-10-19 10:49:40,746 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM0PLUS/Core/Inc/main.h_save
+2024-10-19 10:49:40,796 [INFO] CodeEngine:279 - Generated code: /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM0PLUS/Core/Inc/main.h
+2024-10-19 10:49:40,797 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM0PLUS/Core/Src/main.c_save
+2024-10-19 10:49:40,859 [INFO] CodeEngine:279 - Generated code: /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM0PLUS/Core/Src/main.c
+2024-10-19 10:49:41,101 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 51mS.
+2024-10-19 10:49:41,104 [INFO] ProjectBuilder:4828 - Project Generator version: 4.5.0-B34
+2024-10-19 10:49:41,169 [INFO] ConfigFileManager:1531 - The Die is : DIE497
+2024-10-19 10:49:43,783 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 2678mS.
+2024-10-19 10:49:43,783 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-10-19 10:49:43,783 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
