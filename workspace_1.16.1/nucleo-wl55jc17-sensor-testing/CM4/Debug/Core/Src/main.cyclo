@@ -1,0 +1,15 @@
+../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h:287:22:LL_AHB1_GRP1_EnableClock	1
+../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h:449:22:LL_AHB2_GRP1_EnableClock	1
+../Core/Src/main.c:92:6:XferCpltCallback	1
+../Core/Src/main.c:97:7:humidity_conversion	1
+../Core/Src/main.c:101:7:temp_conversion	1
+../Core/Src/main.c:105:6:read_temp_humid	2
+../Core/Src/main.c:124:6:read_load_sensor_data	1
+../Core/Src/main.c:139:5:main	2
+../Core/Src/main.c:297:6:SystemClock_Config	3
+../Core/Src/main.c:343:13:MX_ADC_Init	9
+../Core/Src/main.c:456:13:MX_I2C2_Init	4
+../Core/Src/main.c:504:13:MX_USART2_UART_Init	5
+../Core/Src/main.c:550:13:MX_DMA_Init	1
+../Core/Src/main.c:569:13:MX_GPIO_Init	1
+../Core/Src/main.c:591:6:Error_Handler	1

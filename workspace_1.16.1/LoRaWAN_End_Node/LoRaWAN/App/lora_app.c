@@ -82,7 +82,8 @@ enum DeviceType_e
 	LoadCell = 1,
 	Temperature = 2,
 	Humidity = 3,
-	Microphone = 4
+	Microphone = 4,
+	Oxygen = 5
 };
 
 uint8_t msg_buffer[sizeof(Message_t)];
@@ -661,29 +662,34 @@ static void SendTxData(void)
 //    AppData.Buffer[i++] = (uint8_t)(temperature & 0xFF);
 //    AppData.Buffer[i++] = (uint8_t)((humidity >> 8) & 0xFF);
 //    AppData.Buffer[i++] = (uint8_t)(humidity & 0xFF);
-    HumTempTuple_t t;
-    read_temp_humid(&t);
-    Message_t hum = {
-    		.type = Humidity,
+//    HumTempTuple_t t;
+//    read_temp_humid(&t);
+//    Message_t hum = {
+//    		.type = Humidity,
+//			.id = 1,
+//			.data = t.humidity,
+//    };
+//
+//    Message_t temp = {
+//    		.type = Temperature,
+//			.id = 1,
+//			.data = t.temperature,
+//    };
+	Message_t microphone = {
+			.type = Microphone,
 			.id = 1,
-			.data = t.humidity,
-    };
+			.data = 1,
+	};
 
-    Message_t temp = {
-    		.type = Temperature,
-			.id = 1,
-			.data = t.temperature,
-    };
+//    APP_LOG(TS_ON, VLEVEL_M, "Humidity: %d\r\n", t.humidity);
+//    APP_LOG(TS_ON, VLEVEL_M, "Temperature: %d\r\n", t.temperature);
 
-
-    APP_LOG(TS_ON, VLEVEL_M, "Humidity: %d\r\n", t.humidity);
-    APP_LOG(TS_ON, VLEVEL_M, "Temperature: %d\r\n", t.temperature);
-
-
-	memcpy(AppData.Buffer, &hum, sizeof(Message_t));
+	memcpy(AppData.Buffer, &microphone, sizeof(Message_t));
 	i += sizeof(Message_t);
-	memcpy(AppData.Buffer + i, &temp, sizeof(Message_t));
-	i += sizeof(Message_t);
+//	memcpy(AppData.Buffer, &hum, sizeof(Message_t));
+//	i += sizeof(Message_t);
+//	memcpy(AppData.Buffer + i, &temp, sizeof(Message_t));
+//	i += sizeof(Message_t);
 //	AppData.Buffer[i++] = '\r';
 
 
