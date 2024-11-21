@@ -86,6 +86,7 @@ void read_vbat() {
 	HAL_ADC_PollForConversion(&hadc, 20);
 	adc_val = HAL_ADC_GetValue(&hadc);
 	sprintf((char*)adc_buf, "adc val: %u", adc_val);
+    ADC_COMMON->CCR &= ~ADC_CCR_VBATEN;
 	HAL_UART_Transmit(&huart2, adc_buf, strlen((char*)adc_buf), HAL_MAX_DELAY);
 }
 
