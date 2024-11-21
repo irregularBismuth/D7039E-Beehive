@@ -85,7 +85,7 @@ enum DeviceType_e
 	Microphone = 4
 };
 
-uint8_t msg_buffer[sizeof(Message_t)];
+//uint8_t msg_buffer[sizeof(Message_t)];
 
 /* USER CODE END PTD */
 
@@ -661,6 +661,10 @@ static void SendTxData(void)
 //    AppData.Buffer[i++] = (uint8_t)(temperature & 0xFF);
 //    AppData.Buffer[i++] = (uint8_t)((humidity >> 8) & 0xFF);
 //    AppData.Buffer[i++] = (uint8_t)(humidity & 0xFF);
+    /*
+     *
+     * */
+
     HumTempTuple_t t;
     read_temp_humid(&t);
     Message_t hum = {

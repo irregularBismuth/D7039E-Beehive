@@ -1,5 +1,5 @@
 Application/User/Core/timer_if.o: \
- /home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Core/Src/timer_if.c \
+ /home/irregular/D7039E-Beehive/workspace_1.16.1/LoRaWAN_End_Node/Core/Src/timer_if.c \
  ../../Core/Inc/timer_if.h ../../Utilities/timer/stm32_timer.h \
  ../../Drivers/CMSIS/Include/cmsis_compiler.h \
  ../../Drivers/CMSIS/Include/cmsis_gcc.h ../../Core/Inc/utilities_conf.h \

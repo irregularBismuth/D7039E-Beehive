@@ -1,0 +1,4 @@
+cargo:rustc-link-lib=static=cortex-m
+cargo:rustc-link-search=/home/irregular/D7039E-Beehive/target/thumbv6m-none-eabi/release/build/cortex-m-af36dccc2f492819/out
+cargo:rustc-cfg=cortex_m
+cargo:rustc-cfg=armv6m

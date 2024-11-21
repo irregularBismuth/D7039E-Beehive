@@ -1,2 +1,2 @@
-/home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/Common/System/system_stm32wlxx.c:211:6:SystemInit	8	static
-/home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/Common/System/system_stm32wlxx.c:266:6:SystemCoreClockUpdate	32	static
+/home/irregular/D7039E-Beehive/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/Common/System/system_stm32wlxx.c:211:6:SystemInit	8	static
+/home/irregular/D7039E-Beehive/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/Common/System/system_stm32wlxx.c:266:6:SystemCoreClockUpdate	32	static

@@ -27,6 +27,7 @@
 #include "stm32wlxx_hal_i2c.h"
 #include "stdio.h"
 #include "string.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/

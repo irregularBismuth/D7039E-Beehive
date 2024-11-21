@@ -1,0 +1,9 @@
+/home/irregular/D7039E-Beehive/target/debug/build/stm32f7xx-hal-0aea777a0e7c0c9a/build_script_build-0aea777a0e7c0c9a: /home/irregular/.cargo/registry/src/index.crates.io-6f17d22bba15001f/stm32f7xx-hal-0.8.0/build.rs /home/irregular/.cargo/registry/src/index.crates.io-6f17d22bba15001f/stm32f7xx-hal-0.8.0/memory_512_176.x /home/irregular/.cargo/registry/src/index.crates.io-6f17d22bba15001f/stm32f7xx-hal-0.8.0/memory_1024_320.x /home/irregular/.cargo/registry/src/index.crates.io-6f17d22bba15001f/stm32f7xx-hal-0.8.0/memory_2048_368.x /home/irregular/.cargo/registry/src/index.crates.io-6f17d22bba15001f/stm32f7xx-hal-0.8.0/memory_64_176.x
+
+/home/irregular/D7039E-Beehive/target/debug/build/stm32f7xx-hal-0aea777a0e7c0c9a/build_script_build-0aea777a0e7c0c9a.d: /home/irregular/.cargo/registry/src/index.crates.io-6f17d22bba15001f/stm32f7xx-hal-0.8.0/build.rs /home/irregular/.cargo/registry/src/index.crates.io-6f17d22bba15001f/stm32f7xx-hal-0.8.0/memory_512_176.x /home/irregular/.cargo/registry/src/index.crates.io-6f17d22bba15001f/stm32f7xx-hal-0.8.0/memory_1024_320.x /home/irregular/.cargo/registry/src/index.crates.io-6f17d22bba15001f/stm32f7xx-hal-0.8.0/memory_2048_368.x /home/irregular/.cargo/registry/src/index.crates.io-6f17d22bba15001f/stm32f7xx-hal-0.8.0/memory_64_176.x
+
+/home/irregular/.cargo/registry/src/index.crates.io-6f17d22bba15001f/stm32f7xx-hal-0.8.0/build.rs:
+/home/irregular/.cargo/registry/src/index.crates.io-6f17d22bba15001f/stm32f7xx-hal-0.8.0/memory_512_176.x:
+/home/irregular/.cargo/registry/src/index.crates.io-6f17d22bba15001f/stm32f7xx-hal-0.8.0/memory_1024_320.x:
+/home/irregular/.cargo/registry/src/index.crates.io-6f17d22bba15001f/stm32f7xx-hal-0.8.0/memory_2048_368.x:
+/home/irregular/.cargo/registry/src/index.crates.io-6f17d22bba15001f/stm32f7xx-hal-0.8.0/memory_64_176.x:

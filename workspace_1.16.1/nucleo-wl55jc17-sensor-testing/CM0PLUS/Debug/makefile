@@ -62,8 +62,8 @@ all: main-build
 main-build: nucleo-wl55jc17-sensor-testing_CM0PLUS.elf secondary-outputs
 
 # Tool invocations
-nucleo-wl55jc17-sensor-testing_CM0PLUS.elf nucleo-wl55jc17-sensor-testing_CM0PLUS.map: $(OBJS) $(USER_OBJS) /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM0PLUS/STM32WL55JCIX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "nucleo-wl55jc17-sensor-testing_CM0PLUS.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"/home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM0PLUS/STM32WL55JCIX_FLASH.ld" --specs=nosys.specs -Wl,-Map="nucleo-wl55jc17-sensor-testing_CM0PLUS.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+nucleo-wl55jc17-sensor-testing_CM0PLUS.elf nucleo-wl55jc17-sensor-testing_CM0PLUS.map: $(OBJS) $(USER_OBJS) /home/irregular/D7039E-Beehive/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM0PLUS/STM32WL55JCIX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "nucleo-wl55jc17-sensor-testing_CM0PLUS.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"/home/irregular/D7039E-Beehive/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/CM0PLUS/STM32WL55JCIX_FLASH.ld" --specs=nosys.specs -Wl,-Map="nucleo-wl55jc17-sensor-testing_CM0PLUS.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

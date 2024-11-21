@@ -1,0 +1,5 @@
+cargo:rustc-cfg=cortex_m
+cargo:rustc-cfg=armv7m
+cargo:rustc-link-search=/home/irregular/D7039E-Beehive/target/thumbv7em-none-eabi/release/build/cortex-m-rt-9101052678cbf7c6/out
+cargo:rerun-if-changed=build.rs
+cargo:rerun-if-changed=link.x.in

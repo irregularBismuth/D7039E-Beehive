@@ -1,7 +1,7 @@
 Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo.o: \
- /home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo.c \
- /home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo.h \
- /home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_errno.h \
+ /home/irregular/D7039E-Beehive/workspace_1.16.1/LoRaWAN_End_Node/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo.c \
+ /home/irregular/D7039E-Beehive/workspace_1.16.1/LoRaWAN_End_Node/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo.h \
+ /home/irregular/D7039E-Beehive/workspace_1.16.1/LoRaWAN_End_Node/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_errno.h \
  ../../Core/Inc/stm32wlxx_nucleo_conf.h \
  ../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal.h \
  ../../Core/Inc/stm32wlxx_hal_conf.h \
@@ -45,8 +45,8 @@ Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo.o: \
  ../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h \
  ../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h \
  ../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
-/home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo.h:
-/home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_errno.h:
+/home/irregular/D7039E-Beehive/workspace_1.16.1/LoRaWAN_End_Node/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo.h:
+/home/irregular/D7039E-Beehive/workspace_1.16.1/LoRaWAN_End_Node/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_errno.h:
 ../../Core/Inc/stm32wlxx_nucleo_conf.h:
 ../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal.h:
 ../../Core/Inc/stm32wlxx_hal_conf.h:

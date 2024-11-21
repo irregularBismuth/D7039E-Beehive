@@ -11,35 +11,18 @@
   *
   * This software is licensed under terms that can be found in the LICENSE file
   * in the root directory of this software component.
-  * If no LICENSE file comes with this software, it is provided AS-IS.
+  * If no LICENSE file comes with this software, it is pro:vided AS-IS.
   *
   ******************************************************************************
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include <string.h>
+#include <stdio.h>
+#include <stdint.h>
 
-/* Private includes ----------------------------------------------------------*/
-/* USER CODE BEGIN Includes */
 #include "math.h"
-/* USER CODE END Includes */
-
-/* Private typedef -----------------------------------------------------------*/
-/* USER CODE BEGIN PTD */
-
-/* USER CODE END PTD */
-
-/* Private define ------------------------------------------------------------*/
-/* USER CODE BEGIN PD */
-
-/* USER CODE END PD */
-
-/* Private macro -------------------------------------------------------------*/
-/* USER CODE BEGIN PM */
-
-/* USER CODE END PM */
-
-/* Private variables ---------------------------------------------------------*/
 
 ADC_HandleTypeDef hadc;
 
@@ -96,12 +79,22 @@ void read_temp_humid() {
 	HAL_UART_Transmit(&huart2, i2c_buf, strlen((char*)i2c_buf), HAL_MAX_DELAY);
 }
 
-void read_load_sensor_data() {
+void read_vbat() {
 	uint32_t adc_val;
-	uint8_t adc[30];
+	uint8_t adc_buf[30];
+	ADC_COMMON->CCR |= ADC_CCR_VBATEN;
 	HAL_ADC_PollForConversion(&hadc, 20);
 	adc_val = HAL_ADC_GetValue(&hadc);
-	sprintf(adc_buf, "adc val: %u", adc_val);
+	sprintf((char*)adc_buf, "adc val: %u", adc_val);
+	HAL_UART_Transmit(&huart2, adc_buf, strlen((char*)adc_buf), HAL_MAX_DELAY);
+}
+
+void read_load_sensor_data() {
+	uint32_t adc_val;
+	uint8_t adc_buf[30];
+	HAL_ADC_PollForConversion(&hadc, 20);
+	adc_val = HAL_ADC_GetValue(&hadc);
+	sprintf((char*)adc_buf, "adc val: %ul", adc_val);
 	HAL_UART_Transmit(&huart2, adc_buf, strlen((char*)adc_buf), HAL_MAX_DELAY);
 }
 
@@ -163,70 +156,13 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-
-
-
-//	  buf[0] = REG_TEMP;
-//	  	    ret = HAL_I2C_Master_Transmit(&hi2c2, TMP102_ADDR, buf, 1, 200);
-//	  	    if ( ret != HAL_OK ) {
-//	  	      strcpy((char*)buf, "Error Tx\r\n");
-//	  	    } else {
-//
-//	  	      // Read 2 bytes from the temperature register
-//	  	      ret = HAL_I2C_Master_Receive(&hi2c2, TMP102_ADDR, buf, 2, 200);
-//	  	      if ( ret != HAL_OK ) {
-//	  	        strcpy((char*)buf, "Error Rx\r\n");
-//	  	      } else {
-//
-//	  	        //Combine the bytes
-//	  	        val = ((int16_t)buf[0] << 4) | (buf[1] >> 4);
-//
-//	  	        // Convert to 2's complement, since temperature can be negative
-//	  	        if ( val > 0x7FF ) {
-//	  	          val |= 0xF000;
-//	  	        }
-//
-//	  	        // Convert to float temperature value (Celsius)
-//	  	        temp_c = val * 0.0625;
-//
-//	  	        // Convert temperature to decimal format
-//	  	        temp_c *= 100;
-//	  	        sprintf((char*)buf,
-//	  	              "%u.%u C\r\n",
-//	  	              ((unsigned int)temp_c / 100),
-//	  	              ((unsigned int)temp_c % 100));
-//	  	      }
-//	  	    }
-//
-//	  	    // Send out buffer (temperature or error message)
-//	  	    HAL_UART_Transmit(&huart2, buf, strlen((char*)buf), HAL_MAX_DELAY);
-//
-//	  	    // Wait
-//	  	    HAL_Delay(500);
-
-//	ret = HAL_I2C_Master_Transmit(&hi2c2, TEMPHUM_ADDR, buf, 1, HAL_MAX_DELAY);
-//	if (ret != HAL_OK) {
-//		strcpy((char*)buf, "Error Tx\r\n");
-//	} else {
-//		ret = HAL_I2C_Master_Receive(&hi2c2, TEMPHUM_ADDR, buf, 4, HAL_MAX_DELAY);
-//		if (ret != HAL_OK) {
-//			strcpy((char*)buf, "Error Rx\r\n");
-//		} else {
-//			sprintf((char*)buf, "Got something!\r\n");
-//		}
-//
-//	}
-//	HAL_ADC_Start(&hadc);
+	HAL_ADC_Start(&hadc);
 //	read_load_sensor_data();
 //	HAL_ADC_Stop(&hadc);
-	read_temp_humid();
+	read_vbat();
 	HAL_Delay(500);
 
-    /* USER CODE END WHILE */
-
-    /* USER CODE BEGIN 3 */
   }
-  /* USER CODE END 3 */
 }
 
 /**

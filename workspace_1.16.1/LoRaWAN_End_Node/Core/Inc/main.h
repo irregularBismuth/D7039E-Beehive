@@ -26,6 +26,9 @@
 extern "C" {
 #endif
 
+#include <stdio.h>
+#include <string.h>
+
 /* Includes ------------------------------------------------------------------*/
 #include "stm32wlxx_hal.h"
 

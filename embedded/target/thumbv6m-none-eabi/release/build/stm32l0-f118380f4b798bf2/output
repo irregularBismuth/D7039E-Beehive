@@ -1,0 +1,3 @@
+cargo:rustc-link-search=/home/irregular/D7039E-Beehive/target/thumbv6m-none-eabi/release/build/stm32l0-f118380f4b798bf2/out
+cargo:rerun-if-changed=src/stm32l0x3/device.x
+cargo:rerun-if-changed=build.rs

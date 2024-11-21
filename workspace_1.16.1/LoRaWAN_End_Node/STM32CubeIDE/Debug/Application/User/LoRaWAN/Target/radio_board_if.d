@@ -1,6 +1,6 @@
 Application/User/LoRaWAN/Target/radio_board_if.o: \
- /home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/LoRaWAN/Target/radio_board_if.c \
- /home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/LoRaWAN/Target/radio_board_if.h \
+ /home/irregular/D7039E-Beehive/workspace_1.16.1/LoRaWAN_End_Node/LoRaWAN/Target/radio_board_if.c \
+ /home/irregular/D7039E-Beehive/workspace_1.16.1/LoRaWAN_End_Node/LoRaWAN/Target/radio_board_if.h \
  ../../Core/Inc/platform.h \
  ../../Drivers/CMSIS/Device/ST/STM32WLxx/Include/stm32wlxx.h \
  ../../Drivers/CMSIS/Device/ST/STM32WLxx/Include/stm32wl55xx.h \
@@ -50,7 +50,7 @@ Application/User/LoRaWAN/Target/radio_board_if.o: \
  ../../Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_errno.h \
  ../../Core/Inc/stm32wlxx_nucleo_conf.h \
  ../../Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo.h
-/home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/LoRaWAN/Target/radio_board_if.h:
+/home/irregular/D7039E-Beehive/workspace_1.16.1/LoRaWAN_End_Node/LoRaWAN/Target/radio_board_if.h:
 ../../Core/Inc/platform.h:
 ../../Drivers/CMSIS/Device/ST/STM32WLxx/Include/stm32wlxx.h:
 ../../Drivers/CMSIS/Device/ST/STM32WLxx/Include/stm32wl55xx.h:

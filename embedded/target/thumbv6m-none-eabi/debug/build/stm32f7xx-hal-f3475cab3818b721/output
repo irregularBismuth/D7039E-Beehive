@@ -1,0 +1,7 @@
+cargo:rustc-link-search=/home/irregular/D7039E-Beehive/target/thumbv6m-none-eabi/debug/build/stm32f7xx-hal-f3475cab3818b721/out
+cargo:rerun-if-changed=memory_1024_320.x
+cargo:rerun-if-changed=memory_2048_368.x
+cargo:rerun-if-changed=memory_512_176.x
+cargo:rerun-if-changed=memory_64_176.x
+cargo:rerun-if-changed=memory_64_240.x
+cargo:rerun-if-changed=build.rs

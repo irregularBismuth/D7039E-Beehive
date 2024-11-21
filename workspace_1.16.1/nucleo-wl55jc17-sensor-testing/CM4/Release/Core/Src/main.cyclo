@@ -1,0 +1,8 @@
+../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h:449:22:LL_AHB2_GRP1_EnableClock	1
+../Core/Src/main.c:75:7:humidity_conversion	1
+../Core/Src/main.c:79:7:temp_conversion	1
+../Core/Src/main.c:83:6:read_temp_humid	2
+../Core/Src/main.c:102:6:read_load_sensor_data	1
+../Core/Src/main.c:182:6:SystemClock_Config	3
+../Core/Src/main.c:117:5:main	9
+../Core/Src/main.c:393:6:Error_Handler	1

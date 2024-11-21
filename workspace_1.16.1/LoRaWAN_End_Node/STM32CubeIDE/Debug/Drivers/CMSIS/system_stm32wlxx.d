@@ -1,5 +1,5 @@
 Drivers/CMSIS/system_stm32wlxx.o: \
- /home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Core/Src/system_stm32wlxx.c \
+ /home/irregular/D7039E-Beehive/workspace_1.16.1/LoRaWAN_End_Node/Core/Src/system_stm32wlxx.c \
  ../../Drivers/CMSIS/Device/ST/STM32WLxx/Include/stm32wlxx.h \
  ../../Drivers/CMSIS/Device/ST/STM32WLxx/Include/stm32wl55xx.h \
  ../../Drivers/CMSIS/Include/core_cm4.h \
