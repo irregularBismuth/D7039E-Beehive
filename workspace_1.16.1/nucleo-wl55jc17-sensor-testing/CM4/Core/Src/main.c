@@ -52,6 +52,7 @@ UART_HandleTypeDef huart2;
 //static const uint8_t TMP102_ADDR = 0x48 << 1;
 //static const uint8_t REG_TEMP = 0x00;
 static const uint8_t CHIPCAP2 = 0x28 << 1;
+
 uint16_t adc_val1 = 0;
 uint16_t adc_val2 = 0;
 uint16_t adc_val3 = 0;
@@ -170,6 +171,12 @@ int main(void)
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
   hdma_adc.XferCpltCallback = &XferCpltCallback;
+  while (HAL_ADCEx_Calibration_Start(&hadc) != HAL_OK);
+//  uint32_t adc_cal;
+//  adc_cal = HAL_ADCEx_Calibration_GetValue(&hadc);
+//  sprintf(msgbuf, "adc cal: %hu \r\t\t", adc_cal);
+//  HAL_UART_Transmit(&huart2, (uint8_t *) msgbuf, strlen(msgbuf), HAL_MAX_DELAY);
+
   HAL_ADC_Start_DMA(&hadc, (uint32_t*)raw_values, 7);
   /* USER CODE END 2 */
 
@@ -261,26 +268,26 @@ int main(void)
 		adc_vbat = (uint16_t) raw_values[6];
 	}
 
-	sprintf(msgbuf, "vbat: %hu \r\t\t", adc_vbat);
+//	sprintf(msgbuf, "vbat: %hu \r\t\t", adc_vbat);
+//	HAL_UART_Transmit(&huart2, (uint8_t *) msgbuf, strlen(msgbuf), HAL_MAX_DELAY);
+//
+//	sprintf(msgbuf, "val1: %hu \r\t\t", adc_val1);
+//	HAL_UART_Transmit(&huart2, (uint8_t *) msgbuf, strlen(msgbuf), HAL_MAX_DELAY);
+//
+//	sprintf(msgbuf, "val2: %hu \r\t\t", adc_val2);
+//	HAL_UART_Transmit(&huart2, (uint8_t *) msgbuf, strlen(msgbuf), HAL_MAX_DELAY);
+//
+//	sprintf(msgbuf, "val3: %hu \r\t\t", adc_val3);
+//	HAL_UART_Transmit(&huart2, (uint8_t *) msgbuf, strlen(msgbuf), HAL_MAX_DELAY);
+//
+//	sprintf(msgbuf, "val4: %hu \r\t\t", adc_val4);
+//	HAL_UART_Transmit(&huart2, (uint8_t *) msgbuf, strlen(msgbuf), HAL_MAX_DELAY);
+//
+	sprintf(msgbuf, "val5: %hu \r\t\t\n", adc_val5);
 	HAL_UART_Transmit(&huart2, (uint8_t *) msgbuf, strlen(msgbuf), HAL_MAX_DELAY);
-
-	sprintf(msgbuf, "val1: %hu \r\t\t", adc_val1);
-	HAL_UART_Transmit(&huart2, (uint8_t *) msgbuf, strlen(msgbuf), HAL_MAX_DELAY);
-
-	sprintf(msgbuf, "val2: %hu \r\t\t", adc_val2);
-	HAL_UART_Transmit(&huart2, (uint8_t *) msgbuf, strlen(msgbuf), HAL_MAX_DELAY);
-
-	sprintf(msgbuf, "val3: %hu \r\t\t", adc_val3);
-	HAL_UART_Transmit(&huart2, (uint8_t *) msgbuf, strlen(msgbuf), HAL_MAX_DELAY);
-
-	sprintf(msgbuf, "val4: %hu \r\t\t", adc_val4);
-	HAL_UART_Transmit(&huart2, (uint8_t *) msgbuf, strlen(msgbuf), HAL_MAX_DELAY);
-
-	sprintf(msgbuf, "val5: %hu \r\t\t", adc_val5);
-	HAL_UART_Transmit(&huart2, (uint8_t *) msgbuf, strlen(msgbuf), HAL_MAX_DELAY);
-
-	sprintf(msgbuf, "val6: %hu \r\t\t", adc_val6);
-	HAL_UART_Transmit(&huart2, (uint8_t *) msgbuf, strlen(msgbuf), HAL_MAX_DELAY);
+//
+//	sprintf(msgbuf, "val6: %hu \r\t\t", adc_val6);
+//	HAL_UART_Transmit(&huart2, (uint8_t *) msgbuf, strlen(msgbuf), HAL_MAX_DELAY);
 
 	HAL_Delay(1000);
     /* USER CODE END WHILE */
@@ -436,7 +443,6 @@ static void MX_ADC_Init(void)
 
   /** Configure Regular Channel
   */
-
   sConfig.Channel = ADC_CHANNEL_VBAT;
   sConfig.Rank = ADC_REGULAR_RANK_7;
   if (HAL_ADC_ConfigChannel(&hadc, &sConfig) != HAL_OK)
