@@ -1,5 +1,5 @@
 Middlewares/LoRaWAN/RegionCommon.o: \
- /home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCommon.c \
+ /home/irregular/D7039E-Beehive/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCommon.c \
  ../../Middlewares/Third_Party/SubGHz_Phy/radio.h \
  ../../Middlewares/Third_Party/SubGHz_Phy/radio_def.h \
  ../../Middlewares/Third_Party/SubGHz_Phy/radio_ex.h \
@@ -10,7 +10,7 @@ Middlewares/LoRaWAN/RegionCommon.o: \
  ../../Drivers/CMSIS/Include/cmsis_gcc.h ../../Utilities/misc/stm32_mem.h \
  ../../Utilities/misc/stm32_tiny_vsnprintf.h \
  ../../Core/Inc/utilities_def.h \
- /home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCommon.h \
+ /home/irregular/D7039E-Beehive/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCommon.h \
  ../../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacInterfaces.h \
  ../../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacTypes.h \
  ../../LoRaWAN/Target/timer.h ../../Utilities/timer/stm32_timer.h \
@@ -25,8 +25,8 @@ Middlewares/LoRaWAN/RegionCommon.o: \
  ../../Middlewares/Third_Party/LoRaWAN/Mac/secure-element-nvm.h \
  ../../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacClassBNvm.h \
  ../../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacHeaderTypes.h \
- /home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionNvm.h \
- /home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionVersion.h \
+ /home/irregular/D7039E-Beehive/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionNvm.h \
+ /home/irregular/D7039E-Beehive/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionVersion.h \
  ../../LoRaWAN/Target/mw_log_conf.h \
  ../../Utilities/trace/adv_trace/stm32_adv_trace.h
 ../../Middlewares/Third_Party/SubGHz_Phy/radio.h:
@@ -40,7 +40,7 @@ Middlewares/LoRaWAN/RegionCommon.o: \
 ../../Utilities/misc/stm32_mem.h:
 ../../Utilities/misc/stm32_tiny_vsnprintf.h:
 ../../Core/Inc/utilities_def.h:
-/home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCommon.h:
+/home/irregular/D7039E-Beehive/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCommon.h:
 ../../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacInterfaces.h:
 ../../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacTypes.h:
 ../../LoRaWAN/Target/timer.h:
@@ -57,7 +57,7 @@ Middlewares/LoRaWAN/RegionCommon.o: \
 ../../Middlewares/Third_Party/LoRaWAN/Mac/secure-element-nvm.h:
 ../../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacClassBNvm.h:
 ../../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacHeaderTypes.h:
-/home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionNvm.h:
-/home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionVersion.h:
+/home/irregular/D7039E-Beehive/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionNvm.h:
+/home/irregular/D7039E-Beehive/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionVersion.h:
 ../../LoRaWAN/Target/mw_log_conf.h:
 ../../Utilities/trace/adv_trace/stm32_adv_trace.h:

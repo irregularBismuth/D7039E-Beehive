@@ -1,5 +1,5 @@
 Drivers/STM32WLxx_HAL_Driver/stm32wlxx_hal_usart.o: \
- /home/ante/STM32CubeIDE/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_usart.c \
+ /home/irregular/D7039E-Beehive/workspace_1.16.1/nucleo-wl55jc17-sensor-testing/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_usart.c \
  ../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal.h \
  ../Core/Inc/stm32wlxx_hal_conf.h \
  ../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_dma.h \

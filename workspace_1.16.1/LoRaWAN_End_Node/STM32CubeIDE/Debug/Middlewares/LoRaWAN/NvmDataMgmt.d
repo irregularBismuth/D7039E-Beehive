@@ -1,5 +1,5 @@
 Middlewares/LoRaWAN/NvmDataMgmt.o: \
- /home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/LmHandler/NvmDataMgmt.c \
+ /home/irregular/D7039E-Beehive/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/LmHandler/NvmDataMgmt.c \
  ../../Middlewares/Third_Party/LoRaWAN/Utilities/utilities.h \
  ../../Core/Inc/utilities_conf.h \
  ../../Drivers/CMSIS/Include/cmsis_compiler.h \
@@ -20,7 +20,7 @@ Middlewares/LoRaWAN/NvmDataMgmt.o: \
  ../../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCryptoNvm.h \
  ../../Middlewares/Third_Party/LoRaWAN/Mac/secure-element-nvm.h \
  ../../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacClassBNvm.h \
- /home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/LmHandler/NvmDataMgmt.h
+ /home/irregular/D7039E-Beehive/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/LmHandler/NvmDataMgmt.h
 ../../Middlewares/Third_Party/LoRaWAN/Utilities/utilities.h:
 ../../Core/Inc/utilities_conf.h:
 ../../Drivers/CMSIS/Include/cmsis_compiler.h:
@@ -44,4 +44,4 @@ Middlewares/LoRaWAN/NvmDataMgmt.o: \
 ../../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCryptoNvm.h:
 ../../Middlewares/Third_Party/LoRaWAN/Mac/secure-element-nvm.h:
 ../../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacClassBNvm.h:
-/home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/LmHandler/NvmDataMgmt.h:
+/home/irregular/D7039E-Beehive/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/LmHandler/NvmDataMgmt.h:

@@ -1,5 +1,5 @@
 Middlewares/LoRaWAN/LoRaMacAdr.o: \
- /home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c \
+ /home/irregular/D7039E-Beehive/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c \
  ../../Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.h \
  ../../Middlewares/Third_Party/LoRaWAN/Utilities/utilities.h \
  ../../Core/Inc/utilities_conf.h \
@@ -23,8 +23,8 @@ Middlewares/LoRaWAN/LoRaMacAdr.o: \
  ../../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacClassBNvm.h \
  ../../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacHeaderTypes.h \
  ../../Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionNvm.h \
- /home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacAdr.h \
- /home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacVersion.h
+ /home/irregular/D7039E-Beehive/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacAdr.h \
+ /home/irregular/D7039E-Beehive/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacVersion.h
 ../../Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.h:
 ../../Middlewares/Third_Party/LoRaWAN/Utilities/utilities.h:
 ../../Core/Inc/utilities_conf.h:
@@ -51,5 +51,5 @@ Middlewares/LoRaWAN/LoRaMacAdr.o: \
 ../../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacClassBNvm.h:
 ../../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacHeaderTypes.h:
 ../../Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionNvm.h:
-/home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacAdr.h:
-/home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacVersion.h:
+/home/irregular/D7039E-Beehive/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacAdr.h:
+/home/irregular/D7039E-Beehive/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacVersion.h:

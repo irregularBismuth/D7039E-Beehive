@@ -1,5 +1,5 @@
 Application/User/Core/stm32_lpm_if.o: \
- /home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Core/Src/stm32_lpm_if.c \
+ /home/irregular/D7039E-Beehive/workspace_1.16.1/LoRaWAN_End_Node/Core/Src/stm32_lpm_if.c \
  ../../Core/Inc/platform.h \
  ../../Drivers/CMSIS/Device/ST/STM32WLxx/Include/stm32wlxx.h \
  ../../Drivers/CMSIS/Device/ST/STM32WLxx/Include/stm32wl55xx.h \

@@ -1,5 +1,5 @@
 Middlewares/LoRaWAN/soft-se.o: \
- /home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c \
+ /home/irregular/D7039E-Beehive/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c \
  ../../LoRaWAN/Target/lorawan_conf.h \
  ../../Middlewares/Third_Party/SubGHz_Phy/radio.h \
  ../../Middlewares/Third_Party/SubGHz_Phy/radio_def.h \
@@ -12,8 +12,8 @@ Middlewares/LoRaWAN/soft-se.o: \
  ../../Utilities/misc/stm32_tiny_vsnprintf.h \
  ../../Core/Inc/utilities_def.h ../../LoRaWAN/Target/mw_log_conf.h \
  ../../Utilities/trace/adv_trace/stm32_adv_trace.h \
- /home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Crypto/lorawan_aes.h \
- /home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Crypto/cmac.h \
+ /home/irregular/D7039E-Beehive/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Crypto/lorawan_aes.h \
+ /home/irregular/D7039E-Beehive/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Crypto/cmac.h \
  ../../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacHeaderTypes.h \
  ../../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacVersion.h \
  ../../Middlewares/Third_Party/LoRaWAN/Mac/secure-element.h \
@@ -47,8 +47,8 @@ Middlewares/LoRaWAN/soft-se.o: \
 ../../Core/Inc/utilities_def.h:
 ../../LoRaWAN/Target/mw_log_conf.h:
 ../../Utilities/trace/adv_trace/stm32_adv_trace.h:
-/home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Crypto/lorawan_aes.h:
-/home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Crypto/cmac.h:
+/home/irregular/D7039E-Beehive/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Crypto/lorawan_aes.h:
+/home/irregular/D7039E-Beehive/workspace_1.16.1/LoRaWAN_End_Node/Middlewares/Third_Party/LoRaWAN/Crypto/cmac.h:
 ../../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacHeaderTypes.h:
 ../../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacVersion.h:
 ../../Middlewares/Third_Party/LoRaWAN/Mac/secure-element.h:

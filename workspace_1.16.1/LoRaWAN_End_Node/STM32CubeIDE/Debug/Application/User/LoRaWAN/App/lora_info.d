@@ -1,5 +1,5 @@
 Application/User/LoRaWAN/App/lora_info.o: \
- /home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/LoRaWAN/App/lora_info.c \
+ /home/irregular/D7039E-Beehive/workspace_1.16.1/LoRaWAN_End_Node/LoRaWAN/App/lora_info.c \
  ../../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.h \
  ../../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacInterfaces.h \
  ../../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacTypes.h \
@@ -20,7 +20,7 @@ Application/User/LoRaWAN/App/lora_info.o: \
  ../../Middlewares/Third_Party/LoRaWAN/Utilities/utilities.h \
  ../../Middlewares/Third_Party/LoRaWAN/Mac/secure-element-nvm.h \
  ../../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacClassBNvm.h \
- /home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/LoRaWAN/App/lora_info.h \
+ /home/irregular/D7039E-Beehive/workspace_1.16.1/LoRaWAN_End_Node/LoRaWAN/App/lora_info.h \
  ../../Core/Inc/sys_app.h ../../Core/Inc/sys_conf.h \
  ../../Utilities/trace/adv_trace/stm32_adv_trace.h
 ../../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.h:
@@ -46,7 +46,7 @@ Application/User/LoRaWAN/App/lora_info.o: \
 ../../Middlewares/Third_Party/LoRaWAN/Utilities/utilities.h:
 ../../Middlewares/Third_Party/LoRaWAN/Mac/secure-element-nvm.h:
 ../../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacClassBNvm.h:
-/home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/LoRaWAN/App/lora_info.h:
+/home/irregular/D7039E-Beehive/workspace_1.16.1/LoRaWAN_End_Node/LoRaWAN/App/lora_info.h:
 ../../Core/Inc/sys_app.h:
 ../../Core/Inc/sys_conf.h:
 ../../Utilities/trace/adv_trace/stm32_adv_trace.h:

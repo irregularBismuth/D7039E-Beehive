@@ -1,5 +1,5 @@
 Application/User/LoRaWAN/App/lora_app.o: \
- /home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/LoRaWAN/App/lora_app.c \
+ /home/irregular/D7039E-Beehive/workspace_1.16.1/LoRaWAN_End_Node/LoRaWAN/App/lora_app.c \
  ../../Core/Inc/platform.h \
  ../../Drivers/CMSIS/Device/ST/STM32WLxx/Include/stm32wlxx.h \
  ../../Drivers/CMSIS/Device/ST/STM32WLxx/Include/stm32wl55xx.h \
@@ -56,13 +56,13 @@ Application/User/LoRaWAN/App/lora_app.o: \
  ../../Utilities/misc/stm32_mem.h \
  ../../Utilities/misc/stm32_tiny_vsnprintf.h \
  ../../Core/Inc/utilities_def.h \
- /home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/LoRaWAN/App/lora_app.h \
+ /home/irregular/D7039E-Beehive/workspace_1.16.1/LoRaWAN_End_Node/LoRaWAN/App/lora_app.h \
  ../../Utilities/sequencer/stm32_seq.h \
  ../../Utilities/timer/stm32_timer.h ../../Core/Inc/utilities_def.h \
- /home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/LoRaWAN/App/app_version.h \
+ /home/irregular/D7039E-Beehive/workspace_1.16.1/LoRaWAN_End_Node/LoRaWAN/App/app_version.h \
  ../../Middlewares/Third_Party/LoRaWAN/LmHandler/lorawan_version.h \
  ../../Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/subghz_phy_version.h \
- /home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/LoRaWAN/App/lora_info.h \
+ /home/irregular/D7039E-Beehive/workspace_1.16.1/LoRaWAN_End_Node/LoRaWAN/App/lora_info.h \
  ../../Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.h \
  ../../Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandlerTypes.h \
  ../../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacInterfaces.h \
@@ -81,7 +81,7 @@ Application/User/LoRaWAN/App/lora_app.o: \
  ../../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacClassBNvm.h \
  ../../Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionVersion.h \
  ../../Core/Inc/adc_if.h ../../Core/Inc/adc.h ../../Core/Inc/platform.h \
- /home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/LoRaWAN/App/CayenneLpp.h \
+ /home/irregular/D7039E-Beehive/workspace_1.16.1/LoRaWAN_End_Node/LoRaWAN/App/CayenneLpp.h \
  ../../Core/Inc/sys_sensors.h ../../Core/Inc/flash_if.h \
  ../../Core/Inc/i2c.h
 ../../Core/Inc/platform.h:
@@ -141,14 +141,14 @@ Application/User/LoRaWAN/App/lora_app.o: \
 ../../Utilities/misc/stm32_mem.h:
 ../../Utilities/misc/stm32_tiny_vsnprintf.h:
 ../../Core/Inc/utilities_def.h:
-/home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/LoRaWAN/App/lora_app.h:
+/home/irregular/D7039E-Beehive/workspace_1.16.1/LoRaWAN_End_Node/LoRaWAN/App/lora_app.h:
 ../../Utilities/sequencer/stm32_seq.h:
 ../../Utilities/timer/stm32_timer.h:
 ../../Core/Inc/utilities_def.h:
-/home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/LoRaWAN/App/app_version.h:
+/home/irregular/D7039E-Beehive/workspace_1.16.1/LoRaWAN_End_Node/LoRaWAN/App/app_version.h:
 ../../Middlewares/Third_Party/LoRaWAN/LmHandler/lorawan_version.h:
 ../../Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/subghz_phy_version.h:
-/home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/LoRaWAN/App/lora_info.h:
+/home/irregular/D7039E-Beehive/workspace_1.16.1/LoRaWAN_End_Node/LoRaWAN/App/lora_info.h:
 ../../Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.h:
 ../../Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandlerTypes.h:
 ../../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacInterfaces.h:
@@ -170,7 +170,7 @@ Application/User/LoRaWAN/App/lora_app.o: \
 ../../Core/Inc/adc_if.h:
 ../../Core/Inc/adc.h:
 ../../Core/Inc/platform.h:
-/home/ante/STM32CubeIDE/workspace_1.16.1/LoRaWAN_End_Node/LoRaWAN/App/CayenneLpp.h:
+/home/irregular/D7039E-Beehive/workspace_1.16.1/LoRaWAN_End_Node/LoRaWAN/App/CayenneLpp.h:
 ../../Core/Inc/sys_sensors.h:
 ../../Core/Inc/flash_if.h:
 ../../Core/Inc/i2c.h:
