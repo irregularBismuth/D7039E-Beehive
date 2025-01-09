@@ -73,6 +73,13 @@ typedef struct {
 } Message_t;
 
 typedef struct {
+	uint8_t type;
+	uint8_t id;
+	uint8_t data_upper;
+	uint8_t data_lower;
+} Battery_Message_t;
+
+typedef struct {
 	uint8_t humidity;
 	int8_t temperature;
 } HumTempTuple_t;
@@ -83,10 +90,9 @@ enum DeviceType_e
 	Temperature = 2,
 	Humidity = 3,
 	Microphone = 4,
-	Oxygen = 5
+	Oxygen = 5,
+	Battery = 6
 };
-
-uint8_t msg_buffer[sizeof(Message_t)];
 
 /* USER CODE END PTD */
 
@@ -662,34 +668,64 @@ static void SendTxData(void)
 //    AppData.Buffer[i++] = (uint8_t)(temperature & 0xFF);
 //    AppData.Buffer[i++] = (uint8_t)((humidity >> 8) & 0xFF);
 //    AppData.Buffer[i++] = (uint8_t)(humidity & 0xFF);
-//    HumTempTuple_t t;
-//    read_temp_humid(&t);
-//    Message_t hum = {
-//    		.type = Humidity,
+    
+    
+    
+    
+    HumTempTuple_t t;
+    read_temp_humid(&t);
+    Message_t hum = {
+    	 .type = Humidity,
+		 .id = 1,
+		 .data = t.humidity,
+    };
+
+    Message_t temp = {
+    	 .type = Temperature,
+		 .id = 1,
+		 .data = t.temperature,
+    };
+
+    Message_t oxygen = {
+    	 .type = Oxygen,
+		 .id = 1,
+		 .data = 21,
+    };
+
+    Message_t loadcell = {
+    	 .type = LoadCell,
+		 .id = 1,
+		 .data = 20,
+    };
+//	Message_t microphone = {
+//			.type = Microphone,
 //			.id = 1,
-//			.data = t.humidity,
-//    };
-//
-//    Message_t temp = {
-//    		.type = Temperature,
-//			.id = 1,
-//			.data = t.temperature,
-//    };
-	Message_t microphone = {
-			.type = Microphone,
+//			.data = 1,
+//	};
+    uint16_t battery_val = 3800;
+
+	Battery_Message_t battery = {
+			.type = Battery,
 			.id = 1,
-			.data = 1,
+			.data_upper = battery_val >> 8,
+			.data_lower = battery_val
 	};
 
 //    APP_LOG(TS_ON, VLEVEL_M, "Humidity: %d\r\n", t.humidity);
 //    APP_LOG(TS_ON, VLEVEL_M, "Temperature: %d\r\n", t.temperature);
 
-	memcpy(AppData.Buffer, &microphone, sizeof(Message_t));
+//	memcpy(AppData.Buffer, &microphone, sizeof(Message_t));
+//	i += sizeof(Message_t);
+	memcpy(AppData.Buffer, &hum, sizeof(Message_t));
 	i += sizeof(Message_t);
-//	memcpy(AppData.Buffer, &hum, sizeof(Message_t));
-//	i += sizeof(Message_t);
-//	memcpy(AppData.Buffer + i, &temp, sizeof(Message_t));
-//	i += sizeof(Message_t);
+	memcpy(AppData.Buffer + i, &temp, sizeof(Message_t));
+	i += sizeof(Message_t);
+	memcpy(AppData.Buffer + i, &oxygen, sizeof(Message_t));
+	i += sizeof(Message_t);
+	memcpy(AppData.Buffer + i, &loadcell, sizeof(Message_t));
+	i += sizeof(Message_t);
+	memcpy(AppData.Buffer + i, &battery, sizeof(Battery_Message_t));
+	i += sizeof(Battery_Message_t);
 //	AppData.Buffer[i++] = '\r';
 
 

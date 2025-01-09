@@ -31,23 +31,23 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-typedef struct {
-	uint8_t type;
-	int data;
-} Message_t;
-
-typedef struct {
-	int humidity;
-	int temperature;
-} HumTempTuple_t;
-
-enum DeviceType_e
-{
-	LoadCell = 0,
-	Temperature = 1,
-	Humidity = 2,
-	Microphone = 3
-};
+//typedef struct {
+//	uint8_t type;
+//	int data;
+//} Message_t;
+//
+//typedef struct {
+//	int humidity;
+//	int temperature;
+//} HumTempTuple_t;
+//
+//enum DeviceType_e
+//{
+//	LoadCell = 0,
+//	Temperature = 1,
+//	Humidity = 2,
+//	Microphone = 3
+//};
 
 
 /* USER CODE END PTD */
@@ -122,7 +122,7 @@ int main(void)
 
     /* USER CODE END WHILE */
     MX_LoRaWAN_Process();
-//    HumTempTuple_t t = read_temp_humid();
+
     /* USER CODE BEGIN 3 */
 
   }
