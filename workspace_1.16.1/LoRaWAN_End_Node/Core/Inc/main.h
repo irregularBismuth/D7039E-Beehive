@@ -67,8 +67,6 @@ void Error_Handler(void);
 #define BUT1_Pin GPIO_PIN_0
 #define BUT1_GPIO_Port GPIOA
 #define BUT1_EXTI_IRQn EXTI0_IRQn
-#define PROB2_Pin GPIO_PIN_13
-#define PROB2_GPIO_Port GPIOB
 #define PROB1_Pin GPIO_PIN_12
 #define PROB1_GPIO_Port GPIOB
 #define BUT3_Pin GPIO_PIN_6

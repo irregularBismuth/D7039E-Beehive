@@ -67,7 +67,7 @@ extern "C" {
 /**
   * @brief Pin of Probe Line 2
   */
-#define PROBE_LINE2_PIN                           GPIO_PIN_13
+#define PROBE_LINE2_PIN                           GPIO_PIN_11
 
 /**
   * @brief Port of Probe Line 2

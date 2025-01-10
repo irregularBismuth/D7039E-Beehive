@@ -530,6 +530,407 @@ void read_temp_humid(HumTempTuple_t *t) {
 	return;
 }
 
+//uint16_t TestRank1(void)
+//{
+//	uint32_t ADCxConvertedValues = 0;
+//	ADC_ChannelConfTypeDef sConfig = {0};
+//
+//	MX_ADC_Init();
+//
+//	/* Start Calibration */
+//	if (HAL_ADCEx_Calibration_Start(&hadc) != HAL_OK)
+//	{
+//		Error_Handler();
+//	}
+//
+//	/* Configure Regular Channel */
+//	sConfig.Channel = ADC_CHANNEL_0;
+//	sConfig.Rank = ADC_REGULAR_RANK_1;
+//	sConfig.SamplingTime = ADC_SAMPLINGTIME_COMMON_1;
+//	if (HAL_ADC_ConfigChannel(&hadc, &sConfig) != HAL_OK)
+//	{
+//		Error_Handler();
+//	}
+//
+//	if (HAL_ADC_Start(&hadc) != HAL_OK)
+//	{
+//	/* Start Error */
+//		Error_Handler();
+//	}
+//	/** Wait for end of conversion */
+//	HAL_ADC_PollForConversion(&hadc, HAL_MAX_DELAY);
+//
+//	/** Wait for end of conversion */
+//	HAL_ADC_Stop(&hadc);   /* it calls also ADC_Disable() */
+//
+//	ADCxConvertedValues = (uint16_t) HAL_ADC_GetValue(&hadc);
+//
+//	HAL_ADC_DeInit(&hadc);
+//
+//	return ADCxConvertedValues;
+//}
+//
+//uint16_t TestRank2(void)
+//{
+//	uint32_t ADCxConvertedValues = 0;
+//	ADC_ChannelConfTypeDef sConfig = {0};
+//
+//	MX_ADC_Init();
+//
+//	/* Start Calibration */
+//	if (HAL_ADCEx_Calibration_Start(&hadc) != HAL_OK)
+//	{
+//		Error_Handler();
+//	}
+//
+//	/* Configure Regular Channel */
+//	sConfig.Channel = ADC_CHANNEL_1;
+//	sConfig.Rank = ADC_REGULAR_RANK_1;
+//	sConfig.SamplingTime = ADC_SAMPLINGTIME_COMMON_1;
+//	if (HAL_ADC_ConfigChannel(&hadc, &sConfig) != HAL_OK)
+//	{
+//		Error_Handler();
+//	}
+//
+//	if (HAL_ADC_Start(&hadc) != HAL_OK)
+//	{
+//	/* Start Error */
+//		Error_Handler();
+//	}
+//	/** Wait for end of conversion */
+//	HAL_ADC_PollForConversion(&hadc, HAL_MAX_DELAY);
+//
+//	/** Wait for end of conversion */
+//	HAL_ADC_Stop(&hadc);   /* it calls also ADC_Disable() */
+//
+//	ADCxConvertedValues = (uint16_t) HAL_ADC_GetValue(&hadc);
+//
+//	HAL_ADC_DeInit(&hadc);
+//
+//	return ADCxConvertedValues;
+//}
+//
+//uint16_t TestRank3(void)
+//{
+//	uint32_t ADCxConvertedValues = 0;
+//	ADC_ChannelConfTypeDef sConfig = {0};
+//
+//	MX_ADC_Init();
+//
+//	/* Start Calibration */
+//	if (HAL_ADCEx_Calibration_Start(&hadc) != HAL_OK)
+//	{
+//		Error_Handler();
+//	}
+//
+//	/* Configure Regular Channel */
+//	sConfig.Channel = ADC_CHANNEL_2;
+//	sConfig.Rank = ADC_REGULAR_RANK_1;
+//	sConfig.SamplingTime = ADC_SAMPLINGTIME_COMMON_1;
+//	if (HAL_ADC_ConfigChannel(&hadc, &sConfig) != HAL_OK)
+//	{
+//		Error_Handler();
+//	}
+//
+//	if (HAL_ADC_Start(&hadc) != HAL_OK)
+//	{
+//	/* Start Error */
+//		Error_Handler();
+//	}
+//	/** Wait for end of conversion */
+//	HAL_ADC_PollForConversion(&hadc, HAL_MAX_DELAY);
+//
+//	/** Wait for end of conversion */
+//	HAL_ADC_Stop(&hadc);   /* it calls also ADC_Disable() */
+//
+//	ADCxConvertedValues = (uint16_t) HAL_ADC_GetValue(&hadc);
+//
+//	HAL_ADC_DeInit(&hadc);
+//
+//	return ADCxConvertedValues;
+//}
+//
+//uint16_t TestRank4(void)
+//{
+//	uint32_t ADCxConvertedValues = 0;
+//	ADC_ChannelConfTypeDef sConfig = {0};
+//
+//	MX_ADC_Init();
+//
+//	/* Start Calibration */
+//	if (HAL_ADCEx_Calibration_Start(&hadc) != HAL_OK)
+//	{
+//		Error_Handler();
+//	}
+//
+//	/* Configure Regular Channel */
+//	sConfig.Channel = ADC_CHANNEL_3;
+//	sConfig.Rank = ADC_REGULAR_RANK_1;
+//	sConfig.SamplingTime = ADC_SAMPLINGTIME_COMMON_1;
+//	if (HAL_ADC_ConfigChannel(&hadc, &sConfig) != HAL_OK)
+//	{
+//		Error_Handler();
+//	}
+//
+//	if (HAL_ADC_Start(&hadc) != HAL_OK)
+//	{
+//	/* Start Error */
+//		Error_Handler();
+//	}
+//	/** Wait for end of conversion */
+//	HAL_ADC_PollForConversion(&hadc, HAL_MAX_DELAY);
+//
+//	/** Wait for end of conversion */
+//	HAL_ADC_Stop(&hadc);   /* it calls also ADC_Disable() */
+//
+//	ADCxConvertedValues = (uint16_t) HAL_ADC_GetValue(&hadc);
+//
+//	HAL_ADC_DeInit(&hadc);
+//
+//	return ADCxConvertedValues;
+//}
+//
+//uint16_t TestRank5(void)
+//{
+//	uint32_t ADCxConvertedValues = 0;
+//	ADC_ChannelConfTypeDef sConfig = {0};
+//
+//	MX_ADC_Init();
+//
+//	/* Start Calibration */
+//	if (HAL_ADCEx_Calibration_Start(&hadc) != HAL_OK)
+//	{
+//		Error_Handler();
+//	}
+//
+//	/* Configure Regular Channel */
+//	sConfig.Channel = ADC_CHANNEL_4;
+//	sConfig.Rank = ADC_REGULAR_RANK_1;
+//	sConfig.SamplingTime = ADC_SAMPLINGTIME_COMMON_1;
+//	if (HAL_ADC_ConfigChannel(&hadc, &sConfig) != HAL_OK)
+//	{
+//		Error_Handler();
+//	}
+//
+//	if (HAL_ADC_Start(&hadc) != HAL_OK)
+//	{
+//	/* Start Error */
+//		Error_Handler();
+//	}
+//	/** Wait for end of conversion */
+//	HAL_ADC_PollForConversion(&hadc, HAL_MAX_DELAY);
+//
+//	/** Wait for end of conversion */
+//	HAL_ADC_Stop(&hadc);   /* it calls also ADC_Disable() */
+//
+//	ADCxConvertedValues = (uint16_t) HAL_ADC_GetValue(&hadc);
+//
+//	HAL_ADC_DeInit(&hadc);
+//
+//	return ADCxConvertedValues;
+//}
+//
+//uint16_t TestRank6(void)
+//{
+//	uint32_t ADCxConvertedValues = 0;
+//	ADC_ChannelConfTypeDef sConfig = {0};
+//
+//	MX_ADC_Init();
+//
+//	/* Start Calibration */
+//	if (HAL_ADCEx_Calibration_Start(&hadc) != HAL_OK)
+//	{
+//		Error_Handler();
+//	}
+//
+//	/* Configure Regular Channel */
+//	sConfig.Channel = ADC_CHANNEL_5;
+//	sConfig.Rank = ADC_REGULAR_RANK_1;
+//	sConfig.SamplingTime = ADC_SAMPLINGTIME_COMMON_1;
+//	if (HAL_ADC_ConfigChannel(&hadc, &sConfig) != HAL_OK)
+//	{
+//		Error_Handler();
+//	}
+//
+//	if (HAL_ADC_Start(&hadc) != HAL_OK)
+//	{
+//	/* Start Error */
+//		Error_Handler();
+//	}
+//	/** Wait for end of conversion */
+//	HAL_ADC_PollForConversion(&hadc, HAL_MAX_DELAY);
+//
+//	/** Wait for end of conversion */
+//	HAL_ADC_Stop(&hadc);   /* it calls also ADC_Disable() */
+//
+//	ADCxConvertedValues = (uint16_t) HAL_ADC_GetValue(&hadc);
+//
+//	HAL_ADC_DeInit(&hadc);
+//
+//	return ADCxConvertedValues;
+//}
+//
+//uint16_t TestRank7(void)
+//{
+//	uint32_t ADCxConvertedValues = 0;
+//	ADC_ChannelConfTypeDef sConfig = {0};
+//
+//	MX_ADC_Init();
+//
+//	/* Start Calibration */
+//	if (HAL_ADCEx_Calibration_Start(&hadc) != HAL_OK)
+//	{
+//		Error_Handler();
+//	}
+//
+//	/* Configure Regular Channel */
+//	sConfig.Channel = ADC_CHANNEL_6;
+//	sConfig.Rank = ADC_REGULAR_RANK_1;
+//	sConfig.SamplingTime = ADC_SAMPLINGTIME_COMMON_1;
+//	if (HAL_ADC_ConfigChannel(&hadc, &sConfig) != HAL_OK)
+//	{
+//		Error_Handler();
+//	}
+//
+//	if (HAL_ADC_Start(&hadc) != HAL_OK)
+//	{
+//	/* Start Error */
+//		Error_Handler();
+//	}
+//	/** Wait for end of conversion */
+//	HAL_ADC_PollForConversion(&hadc, HAL_MAX_DELAY);
+//
+//	/** Wait for end of conversion */
+//	HAL_ADC_Stop(&hadc);   /* it calls also ADC_Disable() */
+//
+//	ADCxConvertedValues = (uint16_t) HAL_ADC_GetValue(&hadc);
+//
+//	HAL_ADC_DeInit(&hadc);
+//
+//	return ADCxConvertedValues;
+//}
+
+uint32_t ADC_A2_GetLoadCellLevel(void)
+{
+
+	uint32_t ADCxConvertedValues = 0;
+	ADC_ChannelConfTypeDef sConfig = {0};
+
+	MX_ADC_Init();
+
+	/* Start Calibration */
+	if (HAL_ADCEx_Calibration_Start(&hadc) != HAL_OK)
+	{
+		Error_Handler();
+	}
+
+	/* Configure Regular Channel */
+	sConfig.Channel = ADC_CHANNEL_6;
+	sConfig.Rank = ADC_REGULAR_RANK_1;
+	sConfig.SamplingTime = ADC_SAMPLINGTIME_COMMON_1;
+	if (HAL_ADC_ConfigChannel(&hadc, &sConfig) != HAL_OK)
+	{
+		Error_Handler();
+	}
+
+	if (HAL_ADC_Start(&hadc) != HAL_OK)
+	{
+	/* Start Error */
+		Error_Handler();
+	}
+	/** Wait for end of conversion */
+	HAL_ADC_PollForConversion(&hadc, HAL_MAX_DELAY);
+
+	/** Wait for end of conversion */
+	HAL_ADC_Stop(&hadc);   /* it calls also ADC_Disable() */
+
+	ADCxConvertedValues = HAL_ADC_GetValue(&hadc);
+
+	HAL_ADC_DeInit(&hadc);
+
+	return ADCxConvertedValues;
+}
+
+uint32_t ADC_A1_GetOxygenLevel(void)
+{
+	uint32_t ADCxConvertedValues = 0;
+	ADC_ChannelConfTypeDef sConfig = {0};
+
+	MX_ADC_Init();
+
+	/* Start Calibration */
+	if (HAL_ADCEx_Calibration_Start(&hadc) != HAL_OK)
+	{
+		Error_Handler();
+	}
+
+	/* Configure Regular Channel */
+	sConfig.Channel = ADC_CHANNEL_4;
+	sConfig.Rank = ADC_REGULAR_RANK_1;
+	sConfig.SamplingTime = ADC_SAMPLINGTIME_COMMON_1;
+	if (HAL_ADC_ConfigChannel(&hadc, &sConfig) != HAL_OK)
+	{
+		Error_Handler();
+	}
+
+	if (HAL_ADC_Start(&hadc) != HAL_OK)
+	{
+	/* Start Error */
+		Error_Handler();
+	}
+	/** Wait for end of conversion */
+	HAL_ADC_PollForConversion(&hadc, HAL_MAX_DELAY);
+
+	/** Wait for end of conversion */
+	HAL_ADC_Stop(&hadc);   /* it calls also ADC_Disable() */
+
+	ADCxConvertedValues = HAL_ADC_GetValue(&hadc);
+
+	HAL_ADC_DeInit(&hadc);
+
+	return ADCxConvertedValues;
+}
+
+uint32_t ADC_A0_GetExternalBatteryLevel(void)
+{
+	uint32_t ADCxConvertedValues = 0;
+	ADC_ChannelConfTypeDef sConfig = {0};
+
+	MX_ADC_Init();
+
+	/* Start Calibration */
+	if (HAL_ADCEx_Calibration_Start(&hadc) != HAL_OK)
+	{
+		Error_Handler();
+	}
+
+	/* Configure Regular Channel */
+	sConfig.Channel = ADC_CHANNEL_5;
+	sConfig.Rank = ADC_REGULAR_RANK_1;
+	sConfig.SamplingTime = ADC_SAMPLINGTIME_COMMON_1;
+	if (HAL_ADC_ConfigChannel(&hadc, &sConfig) != HAL_OK)
+	{
+	Error_Handler();
+	}
+
+	if (HAL_ADC_Start(&hadc) != HAL_OK)
+	{
+	/* Start Error */
+	Error_Handler();
+	}
+	/** Wait for end of conversion */
+	HAL_ADC_PollForConversion(&hadc, HAL_MAX_DELAY);
+
+	/** Wait for end of conversion */
+	HAL_ADC_Stop(&hadc);   /* it calls also ADC_Disable() */
+
+	ADCxConvertedValues = HAL_ADC_GetValue(&hadc);
+
+	HAL_ADC_DeInit(&hadc);
+
+	return ADCxConvertedValues;
+}
+
 
 /* USER CODE END PrFD */
 
@@ -716,6 +1117,30 @@ static void SendTxData(void)
 
 //	memcpy(AppData.Buffer, &microphone, sizeof(Message_t));
 //	i += sizeof(Message_t);
+//	uint16_t adc_ch0 = TestRank1();
+//	uint16_t adc_ch1 = TestRank2();
+//	uint16_t adc_ch2 = TestRank3();
+//	uint16_t adc_ch3 = TestRank4();
+//	uint16_t adc_ch4 = TestRank5();
+//	uint16_t adc_ch5 = TestRank6();
+//	uint16_t adc_ch6 = TestRank7();
+
+//	APP_LOG(TS_ON, VLEVEL_M, "adc_ch0: %d\r\n", adc_ch0);
+//	APP_LOG(TS_ON, VLEVEL_M, "adc_ch1: %d\r\n", adc_ch1);
+//	APP_LOG(TS_ON, VLEVEL_M, "adc_ch2: %d\r\n", adc_ch2);
+//	APP_LOG(TS_ON, VLEVEL_M, "adc_ch3: %d\r\n", adc_ch3);
+//	APP_LOG(TS_ON, VLEVEL_M, "adc_ch4: %d\r\n", adc_ch4);
+//	APP_LOG(TS_ON, VLEVEL_M, "adc_ch5: %d\r\n", adc_ch5);
+//	APP_LOG(TS_ON, VLEVEL_M, "adc_ch6: %d\r\n", adc_ch6);
+
+
+	uint16_t a0 = (uint16_t) ADC_A0_GetExternalBatteryLevel();
+	uint16_t a1 = (uint16_t) ADC_A1_GetOxygenLevel();
+	uint16_t a2 = (uint16_t) ADC_A2_GetLoadCellLevel();
+	APP_LOG(TS_ON, VLEVEL_M, "a0: %d\r\n", a0);
+	APP_LOG(TS_ON, VLEVEL_M, "a1: %d\r\n", a1);
+	APP_LOG(TS_ON, VLEVEL_M, "a2: %d\r\n", a2);
+
 	memcpy(AppData.Buffer, &hum, sizeof(Message_t));
 	i += sizeof(Message_t);
 	memcpy(AppData.Buffer + i, &temp, sizeof(Message_t));
