@@ -932,6 +932,14 @@ uint32_t ADC_A0_GetExternalBatteryLevel(void)
 }
 
 
+uint32_t loadcell_conversion(uint32_t v) {
+	return 37.017 * v + 1300;
+}
+
+uint32_t oxygen_conversion(uint32_t v) {
+	return 122.53 * v + 137.91;
+}
+
 /* USER CODE END PrFD */
 
 static void OnRxData(LmHandlerAppData_t *appData, LmHandlerRxParams_t *params)
@@ -1038,8 +1046,8 @@ static void SendTxData(void)
 
     EnvSensors_Read(&sensor_data);
 
-    APP_LOG(TS_ON, VLEVEL_M, "VDDA: %d\r\n", batteryLevel);
-    APP_LOG(TS_ON, VLEVEL_M, "temp: %d\r\n", (int16_t)(sensor_data.temperature));
+//    APP_LOG(TS_ON, VLEVEL_M, "VDDA: %d\r\n", batteryLevel);
+//    APP_LOG(TS_ON, VLEVEL_M, "temp: %d\r\n", (int16_t)(sensor_data.temperature));
 
     AppData.Port = LORAWAN_USER_APP_PORT;
 
@@ -1087,30 +1095,14 @@ static void SendTxData(void)
 		 .data = t.temperature,
     };
 
-    Message_t oxygen = {
-    	 .type = Oxygen,
-		 .id = 1,
-		 .data = 21,
-    };
 
-    Message_t loadcell = {
-    	 .type = LoadCell,
-		 .id = 1,
-		 .data = 20,
-    };
 //	Message_t microphone = {
 //			.type = Microphone,
 //			.id = 1,
 //			.data = 1,
 //	};
-    uint16_t battery_val = 3800;
 
-	Battery_Message_t battery = {
-			.type = Battery,
-			.id = 1,
-			.data_upper = battery_val >> 8,
-			.data_lower = battery_val
-	};
+
 
 //    APP_LOG(TS_ON, VLEVEL_M, "Humidity: %d\r\n", t.humidity);
 //    APP_LOG(TS_ON, VLEVEL_M, "Temperature: %d\r\n", t.temperature);
@@ -1134,12 +1126,33 @@ static void SendTxData(void)
 //	APP_LOG(TS_ON, VLEVEL_M, "adc_ch6: %d\r\n", adc_ch6);
 
 
-	uint16_t a0 = (uint16_t) ADC_A0_GetExternalBatteryLevel();
-	uint16_t a1 = (uint16_t) ADC_A1_GetOxygenLevel();
-	uint16_t a2 = (uint16_t) ADC_A2_GetLoadCellLevel();
-	APP_LOG(TS_ON, VLEVEL_M, "a0: %d\r\n", a0);
-	APP_LOG(TS_ON, VLEVEL_M, "a1: %d\r\n", a1);
-	APP_LOG(TS_ON, VLEVEL_M, "a2: %d\r\n", a2);
+	uint16_t battery_val = (uint16_t) ADC_A0_GetExternalBatteryLevel();
+	Battery_Message_t battery = {
+			.type = Battery,
+			.id = 1,
+			.data_upper = battery_val >> 8,
+			.data_lower = battery_val
+	};
+
+	uint32_t oxygen_reading = ADC_A1_GetOxygenLevel();
+	uint8_t oxygen_val = (uint8_t) oxygen_conversion(oxygen_reading);
+    Message_t oxygen = {
+    	 .type = Oxygen,
+		 .id = 1,
+		 .data = oxygen_val,
+    };
+
+    uint32_t loadcell_reading = ADC_A2_GetLoadCellLevel();
+	uint8_t loadcell_val = (uint8_t) loadcell_conversion(loadcell_reading);
+    Message_t loadcell = {
+    	 .type = LoadCell,
+		 .id = 1,
+		 .data = loadcell_val,
+    };
+
+	APP_LOG(TS_ON, VLEVEL_M, "battery: %d\r\n", battery_val);
+	APP_LOG(TS_ON, VLEVEL_M, "oxygen: %d\r\n", oxygen_val);
+	APP_LOG(TS_ON, VLEVEL_M, "loadcell_val: %d\r\n", loadcell_val);
 
 	memcpy(AppData.Buffer, &hum, sizeof(Message_t));
 	i += sizeof(Message_t);
